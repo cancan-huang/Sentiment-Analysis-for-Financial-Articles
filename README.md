@@ -10,13 +10,14 @@ In general, there are 10 standard steps for text preprocessing. Given that Seeki
 
 By default, text normalization process will not remove accented words or expand contractions as those two steps present insignificant impacts on sentiment analysis. 
 
-In addition, lemmatization is not recommended as the Loughran & McDonald finance dictionary includes words in different forms.
+In addition, lemmatization is not recommended as the Loughran & McDonald Finance Dictionary includes words in different forms.
+
 Note that when removing stop words, the ones given in either the positive words list or the negative words list
-of the Loughran & McDonald finance dictionary should be retained, otherwise, the accuracy will decrease. The rationale is that the stop words list in NLTK are applicable for general cases, but the corpus is related to a specific field, finance. Here, the stop word "against" is retained as it is in the negative words list.
+of the Loughran & McDonald finance dictionary should be retained, otherwise, the accuracy will decrease. The rationale is that the stop words list in `NLTK` are applicable for general cases, but the corpus is related to a specific field, finance. Here, the stop word "against" is retained as it is in the negative words list.
 
 
 Reminder: 
-1. `jit` module in `numba` is for speed-up, applied to the function that contains "for" loop.
+1. `jit` module in `numba` is a essentially decorator for speed-up, applied to the function that contains a `for` loop.
 
 2. `tqdm_notebook` module is for timing visualization in jupyter notebook but somewhat time-consuming. Note that the user can also apply `tqdm` module. To achieve further speed-up, the user shall delete the corresponding block.
 
