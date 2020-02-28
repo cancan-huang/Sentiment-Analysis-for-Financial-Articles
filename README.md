@@ -1,4 +1,4 @@
-# Sentiment-Analysis-for-Financial-Articles
+# Sentiment Analysis for Financial Articles
 
 This project is pertinent to sentiment analysis for 100 articles posted on Seeking Alpha website, see `articles.csv` with dictionary-based approach using the Loughran & McDonald finance dictionary, see `LoughranMcDonald_SentimentWordLists_2018.csv`. 
 
